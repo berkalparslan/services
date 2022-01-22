@@ -22,6 +22,17 @@ public class AccountService {
     }
 
     public Account addAccount(Account account){
+        if(account.getBalance() != 0){
+            try {
+
+            }
+            catch(Exception e){
+
+            }
+        } else {
+            System.out.println("adding 0 amount account");
+            account = accountRepository.save(account);
+        }
 
         return account;
     }

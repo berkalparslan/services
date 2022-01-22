@@ -22,7 +22,7 @@ public class CustomerService {
         return customerRepository.findById(id).orElse(null);
     }
 
-    public List<Customer> getAllCustomers(){
+    public List<Customer> getAll(){
         List<Customer> customers = new ArrayList<>();
         customerRepository.findAll().forEach(customer -> customers.add(customer));
         return customers;
