@@ -24,7 +24,7 @@ public class AccountService {
     public Account addAccount(Account account){
         if(account.getBalance() != 0){
             try {
-
+                System.out.println("adding amount to accounts");
             }
             catch(Exception e){
 

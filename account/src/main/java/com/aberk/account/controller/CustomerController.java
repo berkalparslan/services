@@ -15,9 +15,6 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @Autowired
-    private AccountService accountService;
-
     @GetMapping("/{id}")
     private Customer getCustomer(@PathVariable int id) {
         return customerService.findById(id);
